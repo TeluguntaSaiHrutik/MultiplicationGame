@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #e9f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 500px; 
+}
+
+
+.flex-box {
+    background: rgba(25, 163, 222, 0.9);
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.flex-box h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+.timer {
+    font-size: 22px;
+    color: #fff;
+    background-color: #d9534f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.score,.accuracy {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+.answer-buttons button {
+    font-size: 18px;
+    padding: 12px;
+    width: 100%;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.answer-buttons button:hover {
+    background-color: #d3d3d3;
+}
+
+.answer-buttons button:active {
+    transform: scale(0.98);
+}
+
+.answer-buttons button:focus {
+    outline: none;
+}
+
+.answer-buttons button {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .flex-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .flex-box h1 {
+        font-size: 30px;
+    }
+
+    .question {
+        font-size: 24px;
+    }
+
+    .timer {
+        font-size: 20px;
+    }
+
+    .score {
+        font-size: 18px;
+    }
+
+    .answer-buttons button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
